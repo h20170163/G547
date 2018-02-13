@@ -1,0 +1,1 @@
+There is one kernel module called "8254.c" that uses the 8254 Programmable Interrupt Timer (PIT) to give a 1 ms delay, by loading the value 1193 in the data register. Then, it goes to sleep. The user.c file is used to make a system call to the module in order to read the current value of the counter. This current value can be read both in the user as well as the kernel space.
